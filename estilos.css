@@ -1,0 +1,53 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+
+/* titulos y eso */
+
+h1 {
+    font-family: "Cantata One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: #c97a8b;
+}
+
+h2 {
+    font-family: "Cantata One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #5b889c;
+}
+
+h3 {
+    font-family: "Cantata One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #4d3155;
+}
+
+p {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #000000;
+    text-wrap-style: balance;
+}
+
+ol {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #000000;
+    list-style: none;
+}
+
+#yo {
+    background-image: url(img/yoimg.jpg);
+    background-position: center;
+    background-size: cover;
+}
