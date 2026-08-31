@@ -34,7 +34,7 @@ p {
     font-style: normal;
     font-size: 1em;
     color: #000000;
-    text-wrap-style: balance;
+    text-wrap-style: balance; /*el style está de más*/
 }
 
 ol {
