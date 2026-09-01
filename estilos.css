@@ -4,28 +4,47 @@
 
 /* titulos y eso */
 
+body {
+    h1,
+    h2,
+    h3,
+    p {
+        /* margin-left: 4px; */
+        margin-right: 0;
+        padding: 0;
+    }
+    background-color: #fff4eb;
+}
+
 h1 {
-    font-family: "Cantata One", sans-serif;
-    font-weight: 400;
+    font-family: "Lato-bold", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 3em;
-    color: #c97a8b;
+    font-size: 3.5em;
+    color: #7ea8c8;
+    margin-left: 6px;
+    text-align: center;
 }
 
 h2 {
-    font-family: "Cantata One", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
     color: #5b889c;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h3 {
-    font-family: "Cantata One", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     font-size: 1.5em;
-    color: #4d3155;
+    color: #f0bb6d;
+    margin-left: 6px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -34,22 +53,71 @@ p {
     font-style: normal;
     font-size: 1em;
     color: #000000;
-    text-wrap-style: balance;
+    text-wrap: balance;
+    margin-left: 6px;
 }
 
-ol {
+ul {
     font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
-    color: #5f3e01;
+    color: #5b889c;
     list-style: none;
+    padding-left: 20px;
+    li {
+        margin: 10px;
+    }
 }
 
 #yo {
-    background-image: url(img/yoimg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3e1f5;
+    height: 15vh;
+    padding: 10px 16px ;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-image: url(img/fondo-1.png);
     background-position: center;
     background-size: cover;
-    height: 15vh;
-    padding: 10px 16px 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7ea8c8;
+
+    nav {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        color: #fff4eb;
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            color: #fff4eb;
+            padding: 0 10px;
+            font-size: 1em;
+        }
+    }
+    padding: 10px;
+}
+#iconos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    p {
+        margin-top: 10px;
+    } 
+    img {
+        margin-left: 10px
+    }
 }
