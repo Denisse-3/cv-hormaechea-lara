@@ -5,14 +5,16 @@
 /* titulos y eso */
 
 body {
+
     h1,
     h2,
     h3,
     p {
-        /* margin-left: 4px; */
+        margin-left: 4px;
         margin-right: 0;
         padding: 0;
     }
+
     background-color: #fff4eb;
 }
 
@@ -53,8 +55,7 @@ p {
     font-style: normal;
     font-size: 1em;
     color: #000000;
-    text-wrap: balance;
-    margin-left: 6px;
+    margin-left: 6px
 }
 
 ul {
@@ -65,6 +66,7 @@ ul {
     color: #5b889c;
     list-style: none;
     padding-left: 20px;
+
     li {
         margin: 10px;
     }
@@ -76,7 +78,27 @@ ul {
     align-items: center;
     background-color: #c3e1f5;
     height: 15vh;
-    padding: 10px 16px ;
+    padding: 10px 16px;
+}
+
+#perfil {
+    padding: 0 20%;
+}
+
+#formacion {
+    padding: 0 20%;
+}
+
+#experiencia {
+    padding: 0 20%;
+}
+
+#software {
+    padding: 0 20%;
+}
+
+#habilidades {
+    padding: 0 20%;
 }
 
 footer {
@@ -88,9 +110,7 @@ footer {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     background-color: #7ea8c8;
 
     nav {
@@ -108,15 +128,26 @@ header {
             font-size: 1em;
         }
     }
+
     padding: 10px;
 }
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #iconos {
     display: flex;
     justify-content: flex-start;
     gap: 40px;
+
     p {
         margin-top: 10px;
-    } 
+    }
+
     img {
         margin-left: 10px
     }
