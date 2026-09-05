@@ -77,12 +77,12 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #c3e1f5;
-    height: 15vh;
+    height: 15vh; /*esta altura es rarísima, primero es un error establecer una altura fija a los objetos porque cuando pasemos a responsive vas a tener un problemón, el tamaño de una caja lo tiene que generar los elementos internos como los paddings, y por otro lado, se utilizan los vh para cuando la medida depende de un tamaño de pantalla y este número es muy chiquito */
     padding: 10px 16px;
 }
 
 #perfil {
-    padding: 0 20%;
+    padding: 0 20%; /*este porcentaje genera márgenes laterales muy grandes y deja demasiado poco espacio útil para el contenido. Buscá una solución con max-width y centrado de flex en lugar de reservar un porcentaje tan grande a cada lado.*/
 }
 
 #formacion {
