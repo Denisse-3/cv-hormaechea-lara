@@ -1,26 +1,31 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
+@font-face {
+    font-family: "GentyDemo-Regular";
+    src: url(fuentes/GentyDemo-Regular.otf) format("opentype");
+}
 
 /*estilos generales*/
 body {
     background-color: #fff4eb;
+    margin: 0;
 }
 
 h1 {
-    font-family: "Lato-bold", sans-serif;
-    font-weight: 700;
+    color: var(--1, #7096A7);
+    font-family: "Genty Demo";
+    font-size: 48px;
     font-style: normal;
-    font-size: 4em;
-    color: #7ea8c8;
-    margin-left: 3px;
-    margin-bottom: 11px;
-    margin-top: 3px;
-    text-align: left;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    align-self: stretch;
+    margin-bottom: 8px;
 }
 
 h2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
@@ -31,7 +36,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Lato-semibold", sans-serif;
+    font-family: "Asap-semibold", sans-serif;
     font-weight: 600;
     font-style: italic;
     font-size: 1.4em;
@@ -41,11 +46,11 @@ h3 {
 }
 
 h4 {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.5em;
-    color: #f0bb6d;
+    font-family: "Asap", sans-serif;
+    font-weight: 500;
+    font-style: medium-italic;
+    font-size: 24px;
+    color: #7096A7;
     margin-left: 15px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -53,7 +58,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Lato", sans-serif;
+    font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 1.2em;
@@ -64,7 +69,7 @@ h5 {
 }
 
 h6 {
-    font-family: "Lato", sans-serif;
+    font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
@@ -75,13 +80,12 @@ h6 {
 }
 
 p {
-    font-family: "Asap", sans-serif;
-    font-weight: 400;
+    color: #7096A7;
+    font-family: Asap;
+    font-size: 20px;
     font-style: normal;
-    font-size: 1em;
-    color: #000000;
-    margin-left: 15px;
-    line-height: 1.4em;
+    font-weight: 400;
+    line-height: normal;
 }
 
 ul {
@@ -100,21 +104,31 @@ ul {
 /*inicio de header*/
 header {
 
-    background-color: #7ea8c8;
+    background-color: #7096A7;
+
 
     nav {
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.2em;
-        color: #fff4eb;
-        text-align: right;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
 
         a {
+            color: var(--4, #FFF4EB);
+            font-family: Asap;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
             text-decoration: none;
-            color: #fff4eb;
-            padding: 0 10px;
-            font-size: 1em;
+            line-height: normal;
+            display: flex;
+            height: 40px;
+            padding: 0px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 70px;
+            border: 3px solid var(--4, #FFF4EB);
         }
     }
 
@@ -133,32 +147,24 @@ header {
 
 /*inicio yo*/
 #yo {
+    background: linear-gradient(180deg, #D4E6F0 79.81%, #FFF4EB 100%);
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    background-color: #dbe9f3;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    gap: 29px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .der {
-    text-indent: 20px;
+    display: flex;
+    width: 599px;
+    padding-bottom: 33px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /*fin yo*/
-
-
-/*inicio perfil*/
-#perfil {
-    margin-left: 185px;
-    margin-right: 185px;
-    margin-top: 50px;
-    padding-left: 154px;
-    padding-right: 154px;
-}
-
-/*fin perfil*/
 
 
 /*inicio formacion y experiencia*/
@@ -177,17 +183,79 @@ header {
 .formacion {
     display: flex;
     flex-direction: column;
-    max-width: 44%;
+    align-items: center;
+}
+
+.contenedores-formacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /*fin formacion*/
 
+/*universidad izquierda*/
+.uno {
+    z-index: 1;
+    position: static;
+}
+
+.dos {
+    z-index: 2;
+    position: relative;
+    bottom: 180px;
+    left: 23px;
+}
+
+.tres {
+    z-index: 3;
+    position: static;
+}
+
+.cuatro {
+    z-index: 4;
+    position: relative;
+    bottom: 180px;
+    left: 80px;
+}
 
 /*inicio experiencia*/
 .experiencia {
+    background: linear-gradient(180deg, #FFF4EB 0%, rgba(112, 150, 167, 0.87) 22.6%, rgba(112, 150, 167, 0.87) 80.29%, #FFF4EB 100%);
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 70px 0px;
+    gap:70px
+}
+
+.experiencia-izq {
     display: flex;
     flex-direction: column;
-    max-width: 44%;
+    align-items: center;
+
+    h2 {
+        color: #fff4eb;
+    }
+}
+
+.experiencia-der {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        color: #fff4eb;
+    }
+    ul {
+        margin: 2px;
+    }
+
+    li {
+        color: #fff4eb;
+    }
+
+    h5 {
+        color: #fff4eb;
+    }
 }
 
 /*fin experiencia*/
@@ -302,7 +370,7 @@ footer {
 
 .f-der {
     p {
-        color:#5b889c;
+        color: #5b889c;
         text-align: left;
         line-height: 1em;
         font-size: 1em;
