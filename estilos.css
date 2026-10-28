@@ -6,6 +6,88 @@
     src: url(fuentes/GentyDemo-Regular.otf) format("opentype");
 }
 
+/*index.html inicio*/
+.body-index {
+    background-color: #7096A7;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    padding-top: 90px;
+}
+
+/*header secundario inicio*/
+.header-secundario {
+
+    background-color: #fff4eb;
+
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: var(--4, #7096A7);
+            font-family: "GentyDemo-Regular", sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            text-decoration: none;
+        }
+    }
+
+    padding: 10px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*header secundario fin*/
+
+/*botón conoceme inicio*/
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.boton-conoce {
+
+    display: inline-block;
+    padding: 12px 28px;
+
+    border: 2px solid #Fff4eb;
+    border-radius: 30px;
+
+    color: #Fff4eb;
+    text-decoration: none;
+
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.boton-conoce:hover {
+    background-color: #EDD5A0;
+    color: #7096A7;
+}
+
+
+/*botón conoceme fin*/
+
+/*index.html fin*/
+
+
 /*estilos generales*/
 body {
     background-color: #fff4eb;
@@ -13,20 +95,17 @@ body {
 }
 
 h1 {
-    color: var(--1, #7096A7);
-    font-family: "Genty Demo";
-    font-size: 48px;
+    font-family: "GentyDemo-Regular", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.96px;
-    align-self: stretch;
-    margin-bottom: 8px;
+    font-size: 3em;
+    color: #5b889c;
+    margin: 0px;
 }
 
 h2 {
-    font-family: "Asap", sans-serif;
-    font-weight: 400;
+    font-family: "Asap-bold", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 2em;
     color: #5b889c;
@@ -98,11 +177,15 @@ ul {
 
     li {
         margin: 10px;
+        text-decoration: none;
     }
 }
 
-/*inicio de header*/
-header {
+
+/*sobremi.html inicio*/
+
+/*inicio de header principal*/
+.header-principal {
 
     background-color: #7096A7;
 
@@ -142,7 +225,24 @@ header {
     flex-wrap: wrap;
 }
 
+
 /*fin de header*/
+/*botones hover*/
+.boton-sobremi:hover {
+    background-color: #FFF4EB;
+    color: #7096A7;
+}
+
+.boton-proyectos:hover {
+    background-color: #FFF4EB;
+    color: #7096A7;
+}
+
+.boton-contacto:hover {
+    background-color: #FFF4EB;
+    color: #7096A7;
+}
+
 
 
 /*inicio yo*/
@@ -224,8 +324,8 @@ header {
     background: linear-gradient(180deg, #FFF4EB 0%, rgba(112, 150, 167, 0.87) 22.6%, rgba(112, 150, 167, 0.87) 80.29%, #FFF4EB 100%);
     display: flex;
     justify-content: center;
-    padding: 80px 0px 70px 0px;
-    gap:70px
+    padding: 90px 0px 80px 0px;
+    gap: 70px
 }
 
 .experiencia-izq {
@@ -245,6 +345,7 @@ header {
     h4 {
         color: #fff4eb;
     }
+
     ul {
         margin: 2px;
     }
@@ -263,109 +364,56 @@ header {
 
 /*inicio software*/
 .software {
-    margin-left: 185px;
-    margin-right: 185px;
-    padding-left: 154px;
-    padding-right: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0px 70px 0px;
 }
 
-#iconos {
+.iconos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
 
-    h6 {
-        margin-top: 1px;
-        text-align: center;
-    }
+}
 
-    img {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
+.iconos img:hover {
+    transform: scale(1.1);
 }
 
 /*fin software*/
 
 
-/*inicio proyectos*/
-.proyectos {
-    margin-left: 185px;
-    margin-right: 185px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    padding-left: 154px;
-    padding-right: 154px;
-
-}
-
-.proyecto-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 110px;
-    margin: 40px;
-}
-
-.doble-img:hover {
-    transform: scale(1.3);
-    transition: 2s;
-    box-shadow: 0px 0px 20px #f1bb6d;
-}
-
-.doble-roja:hover {
-    transform: scale(1.3);
-    transition: 2s;
-    box-shadow: 0px 0px 20px #f1bb6d;
-}
-
-.cuadro:hover {
-    transform: scale(1.3);
-    transition: 2s;
-    box-shadow: 0px 0px 20px #f1bb6d;
-}
-
-.link-proyectos {
-    text-align: center;
-    padding: 60px;
-    background-color: #dbe9f3;
-}
-
-.link-proyectos a {
-    font-family: "Lato-bold", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.6em;
-    text-decoration: none;
-    background: none;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
-    border-radius: 2px;
-    color: #5b889c;
-}
-
-.link-proyectos a:hover {
-    background-color: #fff4eb;
-    box-shadow: 0 0 10px #f0bb6d, 0 0 40px #f0bb6d, 0 0 80px #f0bb6d;
-}
-
-/*fin proyectos*/
-
-
 /*inicio footer*/
 footer {
     padding: 60px;
-    background-image: url(img/fondo-1.png);
+    background-color: #D4E6F0;
     background-position: center;
     background-size: cover;
+    h6 {
+        text-align: center;
+    }
+}
+
+img {
+    margin-right: 30px;
 }
 
 #f {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px
+}
+
+.f-izq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
 .f-der {
@@ -378,3 +426,5 @@ footer {
 }
 
 /*fin footer*/
+
+/*sobremi.html fin*/
