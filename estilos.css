@@ -14,7 +14,7 @@
 .portfolio {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 90px; /*en lugar de usar margins tan grandes te conviene usar vh como altura mínima, las referencias visuales están en la devolución. igual es importante que haya un mínimo de margen de emergencia*/
     padding-top: 90px;
 }
 
@@ -104,14 +104,14 @@ h1 {
 }
 
 h2 {
-    font-family: "Asap-bold", sans-serif;
+    font-family: "Asap-bold", sans-serif; 
     font-weight: 700;
     font-style: normal;
     font-size: 2em;
     color: #5b889c;
     margin-left: 10px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 10px; /*los tres margins se pueden escribir en una sola línea*/
 }
 
 h3 {
@@ -158,7 +158,7 @@ h6 {
     margin-top: 3px;
 }
 
-p {
+p { /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     color: #7096A7;
     font-family: Asap;
     font-size: 20px;
@@ -167,7 +167,7 @@ p {
     line-height: normal;
 }
 
-ul {
+ul {  /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -192,24 +192,24 @@ ul {
 
     nav {
         display: flex;
-        width: 500px;
+        width: 500px; /*en lugar de utilizar un ancho fijo te conviene ajustar con gaps así no te condiciona a la hora de hacer mobile*/
         justify-content: space-between;
         align-items: center;
 
         a {
             color: var(--4, #FFF4EB);
             font-family: Asap;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
+            font-size: 14px; /*es un poco chiquitito*/
+            font-style: normal; /*no es necesario*/
+            font-weight: 500; /*no es necesario*/
             text-decoration: none;
-            line-height: normal;
+            line-height: normal; /*no es necesario*/
             display: flex;
             height: 40px;
             padding: 0px 25px;
-            justify-content: center;
+            justify-content: center;/*no es necesario*/
             align-items: center;
-            gap: 10px;
+            gap: 10px; /*es innecesario*/
             border-radius: 70px;
             border: 3px solid var(--4, #FFF4EB);
         }
@@ -218,7 +218,7 @@ ul {
     padding: 10px;
 }
 
-.contenedor {
+.contenedor { /*exactamente esto lo estás declarando en la línea 45*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -257,11 +257,11 @@ ul {
 }
 
 .der {
-    display: flex;
-    width: 599px;
+    display: flex; /*no es necesario*/
+    width: 599px; /*en lugar de utilizar ancho fijo usa max-width porque te va a perjudicar en mobile*/
     padding-bottom: 33px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column;/*no es necesario*/
+    align-items: flex-start;/*no es necesario*/
 }
 
 /*fin yo*/
@@ -324,7 +324,7 @@ ul {
     background: linear-gradient(180deg, #FFF4EB 0%, rgba(112, 150, 167, 0.87) 22.6%, rgba(112, 150, 167, 0.87) 80.29%, #FFF4EB 100%);
     display: flex;
     justify-content: center;
-    padding: 90px 0px 80px 0px;
+    padding: 90px 0px 80px 0px; /*en lugar de usar paddings tan grandes probá con min-height*/
     gap: 70px
 }
 
@@ -375,7 +375,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 110px;
+    gap: 110px; /*alerta de gap muy grande*/
 
 }
 
@@ -443,7 +443,7 @@ h4 {
 }
 
 h2 {
-    margin: 0px;
+    margin: 0px;/*esta propiedad ya la estás declarando en la línea 106, si es para un caso particular te conviene hacer un id pero no repitas selectores! lo mismo te pasa con h4 e img*/
 }
 
 .proyectos {
@@ -453,11 +453,11 @@ h2 {
     align-items: center;
     gap: 40px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 80px; /*hay una forma de dejar padding en una sola línea*/
     background: linear-gradient(90deg, #EDD5A0 0%, #FFF4EB 26.44%, #FFF4EB 75.48%, #EDD5A0 100%);
 }
 
-.diseños {
+.diseños { /*hay propiedades que no hacen nada y no se justifican, ojo con copiar sin criterio de figma*/
     display: flex;
     justify-content: center;
     flex-direction: row;
