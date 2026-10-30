@@ -22,32 +22,25 @@
 .header-secundario {
 
     background-color: #fff4eb;
-
-
+    padding: 10px;
 
     nav {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
 
         a {
             color: var(--4, #7096A7);
-            font-family: "GentyDemo-Regular", sans-serif;
-            font-weight: 400;
+            font-family: "GentyDemo-Regular";
             font-size: 48px;
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
     }
-
-    padding: 10px;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 
 /*header secundario fin*/
@@ -114,7 +107,7 @@ h2 {
     margin-top: 10px;
 }
 
-h3 {
+h4 {
     font-family: "Asap-ligth", sans-serif;
     font-weight: 300;
     font-style: regular;
@@ -124,50 +117,38 @@ h3 {
     margin-top: 2px;
 }
 
-h4 {
+h5 {
     font-family: "Asap", sans-serif;
     font-weight: 500;
     font-style: medium-italic;
     font-size: 24px;
     color: #7096A7;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-
-}
-
-h5 {
-    font-family: "Asap", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.2em;
-    color: #5b889c;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 15px 5px 5px 0px;
 }
 
 h6 {
     font-family: "Asap", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
+    font-style: italic;
+    font-size: 1.2em;
     color: #5b889c;
-    margin-left: 6px;
-    margin-bottom: 5px;
-    margin-top: 3px;
+    margin: 5px 5px 5px 0px;
 }
 
+
 p {
+    /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     color: #7096A7;
     font-family: Asap;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 0px
 }
 
 ul {
+    /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -188,7 +169,6 @@ ul {
 .header-principal {
 
     background-color: #7096A7;
-
 
     nav {
         display: flex;
@@ -219,10 +199,9 @@ ul {
 }
 
 .contenedor {
+    /*exactamente esto lo estás declarando en la línea 45*/
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 
@@ -284,6 +263,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .contenedores-formacion {
@@ -325,6 +305,7 @@ ul {
     display: flex;
     justify-content: center;
     padding: 90px 0px 80px 0px;
+    /*en lugar de usar paddings tan grandes probá con min-height*/
     gap: 70px
 }
 
@@ -333,7 +314,7 @@ ul {
     flex-direction: column;
     align-items: center;
 
-    h2 {
+    h3 {
         color: #fff4eb;
     }
 }
@@ -342,7 +323,7 @@ ul {
     display: flex;
     flex-direction: column;
 
-    h4 {
+    h5 {
         color: #fff4eb;
     }
 
@@ -354,7 +335,7 @@ ul {
         color: #fff4eb;
     }
 
-    h5 {
+    h6 {
         color: #fff4eb;
     }
 }
@@ -440,28 +421,27 @@ img {
 
 }
 
-h4 {
-    margin: 0px;
-}
 
-h3 {
-    display: inline-block;
-    padding: 12px 28px;
-    background-color: #5b889c;
+/*article proyectos inicio*/
 
-    border: 3px solid #Fff4eb;
-    border-radius: 30px;
+.main-proyectos {
 
-    color: #Fff4eb;
-    text-decoration: none;
+    a {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: #5b889c;
+
+        border: 3px solid #Fff4eb;
+        border-radius: 30px;
+
+        color: #Fff4eb;
+        text-decoration: none;
+    }
 }
 
 h2 {
     margin: 0px;
 }
-
-
-/*article proyectos inicio*/
 
 .proyectos {
     display: flex;
@@ -471,7 +451,14 @@ h2 {
     gap: 40px;
     padding-top: 80px;
     padding-bottom: 80px;
+    /*hay una forma de dejar padding en una sola línea*/
     background: linear-gradient(90deg, #EDD5A0 0%, #FFF4EB 26.44%, #FFF4EB 75.48%, #EDD5A0 100%);
+}
+
+.texto-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*article proyectos fin*/
@@ -486,7 +473,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding-top: 20px;
+
 }
 
 /*class categorias*/
@@ -496,7 +483,6 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding-top: 20px;
     padding-bottom: 40px;
 }
 
@@ -522,7 +508,7 @@ h2 {
     position: relative;
 }
 
-.linea-uno h3 {
+.linea-uno a {
     position: absolute;
     top: 260px;
     left: 40px;
@@ -557,6 +543,7 @@ h2 {
     opacity: 1;
 }
 
+
 /*class linea 2. segunda fila de imágenes*/
 
 .linea-dos {
@@ -564,37 +551,30 @@ h2 {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 2px;
+    gap: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/*texto de adentro de las imágenes*/
-.img-izq,
-.img-centro,
-.img-der {
-    position: relative;
-}
 
-.img-izq h3,
-.img-centro h3,
-.img-der h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    z-index: 10;
-}
-
-/*parte del hover de las imagenes*/
 .img-izq,
 .img-centro,
 .img-der {
     position: relative;
     width: 337px;
     height: 400px;
+    flex-shrink: 0;
     border-radius: 40px;
     overflow: hidden;
-    margin-inline: 7px;
+}
+
+.img-izq a,
+.img-centro a,
+.img-der a {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 10;
 }
 
 .img-izq img,
@@ -629,7 +609,6 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 14px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -639,8 +618,8 @@ h2 {
     position: relative;
 }
 
-.imgizq h3,
-.imgder h3 {
+.imgizq a,
+.imgder a {
     position: absolute;
     bottom: 20px;
     left: 30px;
@@ -702,6 +681,30 @@ h2 {
     opacity: 1;
 }
 
+/*parte de las ilustraciones*/
+
+#galeria-ilustraciones {
+    background: linear-gradient(180deg, #FFF4EB 0%, #D4E6F0 49.04%, #FFF4EB 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.categorias2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.linea-cuatro {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
 /*efecto de rebote de las tres filas de imagenes*/
 .linea-uno img:hover {
     transform: scale(1.1);
@@ -718,19 +721,67 @@ h2 {
     transition: transform 0.4s ease;
 }
 
+/*video*/
 
-/* -------------------- formulario -------------------- */
+#video {
+    background: linear-gradient(180deg, #FFF4EB 0%, #D4E6F0 49.04%, #FFF4EB 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-proyecto {
+    max-width: 1037px;
+    height: auto;
+    border-radius: 40px;
+    display: block;
+    object-fit: cover;
+    border: 10px solid #edd5a0;
+    border-radius: 30px;
+
+}
+
+/*contactoooo*/
+
+.main-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* formulario */
 
 .formulario {
-    display: flex
+    background-color: #D4E6F0;
+    border: 4px solid #7096A7;
+    border-radius: 30px;
+    max-width: 750px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 form {
-    width: 90%;
+    max-width: 750px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 form div {
@@ -744,7 +795,7 @@ form div {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     height: 30px;
     gap: 2px;
     color: #7096A7;
@@ -787,7 +838,7 @@ input[type=reset] {
     border-radius: 10px;
     cursor: pointer;
     gap: 20px;
-    margin: 20px 0;
+    margin: 10px;
 }
 
 input[type="submit"]:hover,
@@ -838,7 +889,7 @@ textarea {
 }
 
 .campos {
-    color: #fff4eb;
+    color: #7096A7;
     text-align: right;
     font-family: "Asap", sans-serif;
     font-size: 15px;
@@ -846,17 +897,6 @@ textarea {
     font-weight: 100;
     line-height: normal;
     max-width: 60%;
-}
-
-
-.formulario {
-    border: 1px solid #7096a7;
-    width: 70%;
-    height: 500px;
-    display: flex;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    margin-inline: auto;
 }
 
 

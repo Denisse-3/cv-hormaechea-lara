@@ -22,42 +22,31 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="contacto" >
-            
-        </section>
-        <!-- inicio del formulario -->
-            <section class="formulario">
-                
+    <main class="main-contacto">
+            <section class="contacto" >
+                <h2>¿Trabajamos juntos?</h2>
+                <p>Si te gustó mi trabajo, no dudes en escribirme!</p>
+                <img src="img/animacion-contacto.gif" alt="animacion de contacto" width="237px" height="391px">
+            </section>
+            <section class="formulario">                
                 <form method="post" action="mailto:hormecheald@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
-                    
-                    <!-- parte izquierda del formulario -->
                     <div class="columna-izquierda-formulario">
                         
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ej.: Lara" required>
-
                         <label for="apellido">Apellido:</label>
                         <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ej.: Hormaechea" required>
-
                         <label>Email:</label>
                         <input type="email" name="email" id="email" placeholder="Ej.: laradh@gmail.com" required>
-
                         <p class="ayuda">En que puedo ayudarte?</p>
                         <label><input type="checkbox" name="intereses" value="identidad visual" id="identidad" required>Identidad visual</label>
                         <label><input type="checkbox" name="intereses" value="creación de logo" id="logo" required>Creación de logo</label>
                         <label><input type="checkbox" name="intereses" value="fotografia" id="fotografia" required>Ilutraciones</label>
-
                     </div>
-
-                    <!-- parte derecha del formulario-->
                     <div class="columna-derecha-formulario">
-
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" maxlength="500" placeholder="Hola, me gustaria trabajar con vos! Queria saber..." required></textarea>
-
                         <p class="campos">*Campos obligatorios</p>
-
                         <input type="reset" value="Borrar" class="borrar">
                         <input type="submit" value="Enviar" class="enviar">
                         
