@@ -14,8 +14,6 @@
 .portfolio {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
-    padding-top: 90px;
 }
 
 /*header secundario inicio*/
@@ -97,14 +95,21 @@ h1 {
 }
 
 h2 {
+    font-family: "GentyDemo-Regular", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3.5em;
+    color: #5b889c;
+    margin: 0px;
+}
+
+h3 {
     font-family: "Asap-bold", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2em;
     color: #5b889c;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 h4 {
@@ -137,7 +142,6 @@ h6 {
 
 
 p {
-    /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     color: #7096A7;
     font-family: Asap;
     font-size: 20px;
@@ -148,7 +152,6 @@ p {
 }
 
 ul {
-    /*hay varias propiedades que no están afectando, ojo con copiar directamente de figma*/
     font-family: "Asap", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -172,24 +175,19 @@ ul {
 
     nav {
         display: flex;
-        width: 500px;
+        gap: 40px;
         justify-content: space-between;
         align-items: center;
 
         a {
             color: var(--4, #FFF4EB);
             font-family: Asap;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
+            font-size: 16px;
             text-decoration: none;
-            line-height: normal;
             display: flex;
             height: 40px;
             padding: 0px 25px;
-            justify-content: center;
             align-items: center;
-            gap: 10px;
             border-radius: 70px;
             border: 3px solid var(--4, #FFF4EB);
         }
@@ -199,7 +197,6 @@ ul {
 }
 
 .contenedor {
-    /*exactamente esto lo estás declarando en la línea 45*/
     display: flex;
     justify-content: space-around;
 }
@@ -237,10 +234,9 @@ ul {
 
 .der {
     display: flex;
-    width: 599px;
+    max-width: 599px;
     padding-bottom: 33px;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 /*fin yo*/
@@ -305,7 +301,6 @@ ul {
     display: flex;
     justify-content: center;
     padding: 90px 0px 80px 0px;
-    /*en lugar de usar paddings tan grandes probá con min-height*/
     gap: 70px
 }
 
@@ -356,7 +351,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 110px;
+    gap: 20px;
 
 }
 
@@ -436,11 +431,8 @@ img {
 
         color: #Fff4eb;
         text-decoration: none;
+        font-family: "Asap";
     }
-}
-
-h2 {
-    margin: 0px;
 }
 
 .proyectos {
@@ -451,7 +443,6 @@ h2 {
     gap: 40px;
     padding-top: 80px;
     padding-bottom: 80px;
-    /*hay una forma de dejar padding en una sola línea*/
     background: linear-gradient(90deg, #EDD5A0 0%, #FFF4EB 26.44%, #FFF4EB 75.48%, #EDD5A0 100%);
 }
 
@@ -551,7 +542,7 @@ h2 {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 15px; 
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -703,6 +694,7 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 20px
+
 }
 
 /*efecto de rebote de las tres filas de imagenes*/
