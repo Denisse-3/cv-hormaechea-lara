@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Denisse</title>
     <link rel="stylesheet" href="estilos.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -10,18 +11,35 @@
         @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
-
+<script src="menu.js"></script>
 <body>
     <header class="header-principal">
-        <div class="contenedor">
-            <a href="index.html"><img src="img/logo-claro.png" alt="logo-claro" width="77" height="61" /></a>
-            <nav>
-                <a href="sobremi.html" class="boton-sobremi">Sobre mí</a>
-                <a href="proyectos.html" class="boton-proyectos">Proyectos</a>
-                <a href="contacto.html" class="boton-contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
+    <div class="contenedor">
+
+        <a href="index.html" class="logo-header">
+            <img src="img/logo-claro.png" alt="Logo">
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav id="menu-principal" class="menu-navegacion">
+            <a href="sobremi.html" class="boton-sobremi">Sobre mí</a>
+            <a href="proyectos.html" class="boton-proyectos">Proyectos</a>
+            <a href="contacto.html" class="boton-contacto">Contacto</a>
+        </nav>
+
+    </div>
+</header>
     <main>
         <section id="yo">
             <div class="izq">
@@ -41,7 +59,7 @@
             <div class="contenedores-formacion">
                 <div class="universidad-izq">
                     <div class="uno">
-                        <img src="img/cuadro1.png" alt="cuadro" width="571" height="226" />
+                        <img src="img/cuadro1.png" alt="cuadro" width="571px" height="226px" />
                     </div>
                     <div class="dos">
                         <h5>Licenciatura en Diseño y Comunicación Visual</h5>
@@ -53,7 +71,7 @@
                 </div>
                 <div class="colegio-der">
                     <div class="tres">
-                        <img src="img/cuadro2.png" alt="cuadro" width="571" height="226" />
+                        <img src="img/cuadro2.png" alt="cuadro" width="571px" height="226px" />
                     </div>
                     <div class="cuatro">
                         <h5>Secundario Completo</h5>
@@ -68,7 +86,7 @@
         <section class="experiencia">
             <div class="experiencia-izq">
                 <h3>Experiencia</h3>
-                <img src="img/experiencia.png" alt="experiencia" width="222" height="134" />
+                <img src="img/experiencia.png" alt="experiencia" width="222px" height="134px" />
             </div>
             <div class="experiencia-der">
                 <h5>Proyectos académicos de Diseño y Comunicación Visual</h5>
@@ -98,13 +116,13 @@
     <footer>
         <section id="f">
             <div class="f-izq">
-                <img src="img/logo.png" alt="logo" width="100" height="100">
+                <img src="img/logo.png" alt="logo" width="77px" height="61px">
                 <a href="https://www.instagram.com/d3306_/" target="_blank"><img src="img/ig.png" alt="instagram"
-                        width="30" height="30"></a>
+                        width="30px" height="30px"></a>
                 <a href="https://www.linkedin.com/in/denisse-hormaechea-0b1b4b1b9/" target="_blank"><img
-                        src="img/lin.png" alt="linkedin" width="30" height="30"></a>
+                        src="img/lin.png" alt="linkedin" width="30px" height="30px"></a>
                 <a href="https://www.behance.net/laradehormaec" target="_blank"><img src="img/be.png" alt="behance"
-                        width="30" height="30"></a>
+                        width="30px" height="30px"></a>
             </div>
             <div class="f-centro">
                 <h6>© 2024 Hormaechea Lara Denisse. Todos los derechos reservados.</h6>
